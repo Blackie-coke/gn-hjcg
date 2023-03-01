@@ -11,7 +11,9 @@ if getgenv().library then
     getgenv().library:Unload()
 end
 
+local library = {design = getgenv().design == "kali" and "kali" or "uwuware", tabs = {}, draggable = true, flags = {}, title = "Hit;er", open = false, popup = nil, instances = {}, connections = {}, options = {}, notifications = {}, tabSize = 0, theme = {}, foldername = "cheatx_cnfgs", fileext = ".txt"}
 
+getgenv().library = library
 --Locals
 local dragging, dragInput, dragStart, startPos, dragObject
 
